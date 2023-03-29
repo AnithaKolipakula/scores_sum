@@ -1,0 +1,7 @@
+output:
+List of scores of each student:
+{Anitha=[20, 30, 40, 50], Kalyani=[18, 32, 38, 47], Kareena=[17, 37, 37, 43], gayathri=[16, 34, 35, 47]}
+sum of scores of each student:
+{Anitha=140, Kalyani=275, Kareena=409, gayathri=541}
+  
+ 

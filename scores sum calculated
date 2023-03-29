@@ -1,0 +1,34 @@
+// given a map of student name and their list of scores then 
+//find sum of scores of each student
+
+import java.util.*;
+public class score {
+    public static void main(String args[]){
+        Map<String,List<Integer>> marks=new LinkedHashMap<>();
+        Map<String,Integer> total=new LinkedHashMap<>();
+        marks.put("Anitha",Arrays.asList(20,30,40,50));
+        marks.put("Kalyani",Arrays.asList(18,32,38,47));
+        marks.put("Kareena",Arrays.asList(17,37,37,43));
+        marks.put("gayathri",Arrays.asList(16,34,35,47));
+
+        List<Integer> scores;
+        int sum=0;
+        Set<String> s=marks.keySet();
+
+        for(String key:s){
+            scores=marks.get(key);
+            for(int i=0;i<scores.size();i++){
+                sum=sum+scores.get(i);
+                total.put(key,sum);
+            }
+
+        }
+        System.out.println("List of scores of each student:\n"+marks);
+        System.out.print("sum of scores of each student:\n"+ total);
+
+
+    }
+
+    
+}
+
